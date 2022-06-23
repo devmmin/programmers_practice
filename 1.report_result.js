@@ -26,7 +26,7 @@ function solution() {
 }
 
 // 풀이2
-function solution(id_list, report, k) {
+function solution2(id_list, report, k) {
   let reports = [...new Set(report)].map((a) => {
     return a.split(' ');
   });
@@ -79,10 +79,10 @@ const report = [
 
 const k = 2;
 
-solution(id_list, report, k);
+solution2(id_list, report, k);
 
 const id_list2 = ['con', 'ryan'];
 const report2 = ['ryan con', 'ryan con', 'ryan con', 'ryan con'];
 const k2 = 3;
 
-solution(id_list2, report2, k2);
+solution2(id_list2, report2, k2);
